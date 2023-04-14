@@ -1,0 +1,24 @@
+.content-answer{
+  
+  inline-size:auto;
+  block-size:auto;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 3.5rem;
+  align-items: flex-end;
+}
+.history-answer{
+
+    inline-size:auto;
+    block-size:auto;
+    box-sizing: border-box;
+}
+
+.actual-answer{
+
+    inline-size:auto;
+    block-size:auto;
+    box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+.section-calculator{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.global-content{
+    background-color:#202022 ;
+    inline-size: auto;
+    block-size: auto;
+    padding: 1rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}

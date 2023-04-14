@@ -1,0 +1,42 @@
+.content-buttons{
+
+    inline-size:auto;
+    block-size:auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+}
+.content-buttons-all{
+    display: flex;
+    gap: .5rem;
+
+}
+.button-general{
+    border-radius: 6px;
+    border-style: none;
+    inline-size:30rem;
+    block-size: 4rem;
+    box-sizing: border-box;
+    background-color:#CACACA ;
+    font-size:1rem;
+}
+.button-comand{
+    border-radius: 6px;
+    border-style: none;
+    inline-size: 30rem;
+    block-size: 4rem;
+    box-sizing: border-box;
+    background-color:#878787;
+    font-size:1rem;
+}
+.button-equal{
+    border-radius: 6px;
+    border-style: none;
+    inline-size: 30rem;
+    block-size: 4rem;
+    box-sizing: border-box;
+    background-color:#00BBC9;
+    font-size:1rem;
+}
