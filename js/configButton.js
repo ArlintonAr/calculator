@@ -1,4 +1,4 @@
-import buttonNumber from './converButton.js'
+import buttonConvertNumber from './converButton.js'
 
 //obtiene un string a partir del boton
 function returnString($button, id) {
@@ -38,11 +38,20 @@ function eventButton(){
    const list=getContentButton();
     list.forEach((element, index) => {
         element.addEventListener("click", () => {
-            const $content = document.querySelector("#actualAnswer")
-            $content.textContent = buttonNumber(returnString(element,index))
-    
+            const $actualAnswer= document.querySelector("#actualAnswer")
+            $actualAnswer.textContent = buttonConvertNumber(returnString(element,index))    
+           let valor= $actualAnswer.textContent
+            storageValor(valor)
         })
     });
+
+}
+
+function storageValor(valor){
+  let storageValorNumber=0;
+    storageValorNumber=storageValorNumber +valor
+    debugger
+    return storageValorNumber
 }
 
 export default function configButton() {
