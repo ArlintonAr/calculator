@@ -21,6 +21,9 @@
     box-sizing: border-box;
     background-color:#CACACA ;
     font-size:1rem;
+
+
+    cursor: pointer;
 }
 .button-comand{
     border-radius: 6px;
@@ -30,6 +33,8 @@
     box-sizing: border-box;
     background-color:#878787;
     font-size:1rem;
+
+    cursor: pointer;
 }
 .button-equal{
     border-radius: 6px;
@@ -39,4 +44,6 @@
     box-sizing: border-box;
     background-color:#00BBC9;
     font-size:1rem;
+
+    cursor: pointer;
 }

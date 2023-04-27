@@ -14,18 +14,18 @@
     <section class="section-calculator">
         <h1>CALCULADORA</h1>
         <div class="global-content">
-            <div class="content-answer">
-                <div class="history-answer">
-                    590+4(12)
+            <div class="content-answer" id="contentAnswer">
+                <div class="history-answer" id="historyAnswer">
+                590+4(12)
                 </div>
-                <div class="actual-answer">
-                    8 X
+                <div class="actual-answer" id="actualAnswer">
+                   7128 
                 </div>
             </div>
             <div class="content-buttons">
                 <div class="content-buttons-all">
+                    <button class="button-comand" id="buttonClearError">CE</button>
                     <button class="button-comand">%</button>
-                    <button class="button-comand">CE</button>
                     <button class="button-comand">C</button>
                     <button class="button-comand"></button>
                 </div>
@@ -38,35 +38,36 @@
                 </div>
 
                 <div class="content-buttons-all">
-                    <button class="button-general">7</button>
-                    <button class="button-general">8</button>
-                    <button class="button-general">9</button>
+                    <button class="button-general" id="buttonSeven">7</button>
+                    <button class="button-general" id="buttonEight">8</button>
+                    <button class="button-general" id="buttonNine">9</button>
                     <button class="button-comand">X</button>
                 </div>
 
                 <div class="content-buttons-all">
-                    <button class="button-general">4</button>
-                    <button class="button-general">5</button>
-                    <button class="button-general">6</button>
-                    <button class="button-comand">+</button>
+                    <button class="button-general" id="buttonFour">4</button>
+                    <button class="button-general" id="buttonFive">5</button>
+                    <button class="button-general" id="buttonSix">6</button>
+                    <button class="button-comand" >+</button>
                 </div>
 
                 <div class="content-buttons-all">
-                    <button class="button-general">1</button>
-                    <button class="button-general">2</button>
-                    <button class="button-general">3</button>
-                    <button class="button-comand">-</button>
+                    <button class="button-general" id="buttonOne">1</button>
+                    <button class="button-general" id="buttonTwo">2</button>
+                    <button class="button-general" id="buttonThree">3</button>
+                    <button class="button-comand" id="button">-</button>
                 </div>
 
                 <div class="content-buttons-all">
                     <button class="button-general">+/-</button>
-                    <button class="button-general">0</button>
+                    <button class="button-general" id="buttonCero">0</button>
                     <button class="button-general">.</button>
                     <button class="button-equal">=</button>
                 </div>
             </div>
         </div>
     </section>
+    <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
