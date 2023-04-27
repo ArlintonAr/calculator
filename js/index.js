@@ -1,5 +1,4 @@
-import configButton from "./configButton.js";
-
+import configButton from "./config-button.js"
 
 configButton()
 

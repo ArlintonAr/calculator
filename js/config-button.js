@@ -1,4 +1,4 @@
-import buttonConvertNumber from './converButton.js'
+import buttonConvertNumber from './convert-button.js'
 
 //obtiene un string a partir del boton
 function returnString($button, id) {

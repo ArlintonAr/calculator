@@ -1,5 +1,5 @@
 
-export default function buttonNumber(string) {
+export function buttonConvertNumber(string) {
     let number;
     switch (string) {
         case "0":
