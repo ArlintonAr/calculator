@@ -1,5 +1,5 @@
 
-export function buttonConvertNumber(string) {
+export default function buttonConvertNumber(string) {
     let number;
     switch (string) {
         case "0":
@@ -32,7 +32,6 @@ export function buttonConvertNumber(string) {
         case "9":
             number = 9;
             break;
-
         default:
             break;
 

@@ -1,4 +1,8 @@
-import buttonConvertNumber from './convert-button.js'
+import buttonConvertNumber from './convert-button-number.js'
+import buttonConvertOperator from './convert-button-operator.js'
+import getContentNumbers from './content-numbers.js'
+import getContentOperators from './content-operator.js' 
+
 
 //obtiene un string a partir del boton
 function returnString($button, id) {
@@ -7,54 +11,44 @@ function returnString($button, id) {
     return string
 }
 
-function getContentButton() {
-    const $cero = document.querySelector("#buttonCero")
-    const $one = document.querySelector("#buttonOne")
-    const $two = document.querySelector("#buttonTwo")
-    const $three = document.querySelector("#buttonThree")
-    const $four = document.querySelector("#buttonFour")
-    const $five = document.querySelector("#buttonFive")
-    const $six = document.querySelector("#buttonSix")
-    const $seven = document.querySelector("#buttonSeven")
-    const $eight = document.querySelector("#buttonEight")
-    const $nine = document.querySelector("#buttonNine")
 
-    const listButtons = [
-        $cero,
-        $one,
-        $two,
-        $three,
-        $four,
-        $five,
-        $six,
-        $seven,
-        $eight,
-        $nine
-    ]
-    return listButtons
-}
-
-function eventButton(){
-   const list=getContentButton();
+function eventButtonsNumbers() {
+    const list = getContentNumbers();
     list.forEach((element, index) => {
         element.addEventListener("click", () => {
-            const $actualAnswer= document.querySelector("#actualAnswer")
-            $actualAnswer.textContent = buttonConvertNumber(returnString(element,index))    
-           let valor= $actualAnswer.textContent
+            const $actualAnswer = document.querySelector("#actualAnswer")
+            $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertNumber(returnString(element, index)))
+            let valor = $actualAnswer.textContent
             storageValor(valor)
+           
         })
     });
 
 }
 
-function storageValor(valor){
-  let storageValorNumber=0;
-    storageValorNumber=storageValorNumber +valor
-    debugger
+ function eventButtonsOperators(){
+    const list = getContentOperators ();
+    list.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            const $actualAnswer = document.querySelector("#actualAnswer")
+            $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertOperator(index))  
+            let valor = $actualAnswer.textContent
+            storageValor(valor)        
+        })
+    });
+
+}
+
+function storageValor(valor) {
+    let storageValorNumber = 0;
+    storageValorNumber = storageValorNumber + valor
+
     return storageValorNumber
 }
 
 export default function configButton() {
-    getContentButton()
-    eventButton()
+    getContentNumbers()
+    eventButtonsNumbers()
+    eventButtonsOperators()
+  
 }
