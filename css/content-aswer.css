@@ -17,11 +17,14 @@
 }
 
 .actual-answer{
-
+  
     inline-size:auto;
     block-size:4rem;
     box-sizing: border-box;
 }
 .actual-answer i{
+  font-size: 2rem;
+}
+.history-answer i{
   font-size: 2rem;
 }

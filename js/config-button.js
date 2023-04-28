@@ -17,10 +17,7 @@ function eventButtonsNumbers() {
     list.forEach((element, index) => {
         element.addEventListener("click", () => {
             const $actualAnswer = document.querySelector("#actualAnswer")
-            $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertNumber(returnString(element, index)))
-            let valor = $actualAnswer.textContent
-            storageValor(valor)
-           
+            $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertNumber(returnString(element, index))) 
         })
     });
 
@@ -28,20 +25,28 @@ function eventButtonsNumbers() {
 
  function eventButtonsOperators(){
      const list = getContentOperators ();
+
+     const $actualAnswer = document.querySelector("#actualAnswer")
+     const $historyAnswer=document.querySelector("#historyAnswer")
+     $actualAnswer.textContent=""
+    
      list.forEach((element, index) => {
-        const $actualAnswer = document.querySelector("#actualAnswer")
-        $actualAnswer.textContent=""
         element.addEventListener("click", () => {    
-            $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertOperator(index))  
-            let valor = $actualAnswer.textContent
-            storageValor(valor)        
+            $historyAnswer.textContent=`${$actualAnswer.textContent}`
+            $actualAnswer.textContent=""    
+            $historyAnswer.insertAdjacentHTML('beforeend',buttonConvertOperator(index)) 
+            
         })
     });
-
 }
 
-function storageValor(valor) {
-    let storageValorNumber = 0;
+function operations(){
+  
+}
+
+
+function storageValors(valor) {
+    let storageValors = 0;
     storageValorNumber = storageValorNumber + valor
 
     return storageValorNumber
