@@ -27,10 +27,11 @@ function eventButtonsNumbers() {
 }
 
  function eventButtonsOperators(){
-    const list = getContentOperators ();
-    list.forEach((element, index) => {
-        element.addEventListener("click", () => {
-            const $actualAnswer = document.querySelector("#actualAnswer")
+     const list = getContentOperators ();
+     list.forEach((element, index) => {
+        const $actualAnswer = document.querySelector("#actualAnswer")
+        $actualAnswer.textContent=""
+        element.addEventListener("click", () => {    
             $actualAnswer.insertAdjacentHTML('beforeend',buttonConvertOperator(index))  
             let valor = $actualAnswer.textContent
             storageValor(valor)        

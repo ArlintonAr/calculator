@@ -12,13 +12,16 @@
 .history-answer{
 
     inline-size:auto;
-    block-size:auto;
+    block-size:4rem;
     box-sizing: border-box;
 }
 
 .actual-answer{
 
     inline-size:auto;
-    block-size:auto;
+    block-size:4rem;
     box-sizing: border-box;
+}
+.actual-answer i{
+  font-size: 2rem;
 }
