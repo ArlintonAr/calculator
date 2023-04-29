@@ -1,30 +1,33 @@
-.content-answer{
-  
-  inline-size:auto;
-  block-size:auto;
+.content-answer {
+
+  inline-size: auto;
+  block-size: auto;
   padding: .5rem;
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   align-items: flex-end;
 }
-.history-answer{
 
-    inline-size:auto;
-    block-size:4rem;
-    box-sizing: border-box;
+.history-answer {
+
+  inline-size: auto;
+  block-size: 4rem;
+  box-sizing: border-box;
 }
 
-.actual-answer{
-  
-    inline-size:auto;
-    block-size:4rem;
-    box-sizing: border-box;
+.actual-answer {
+
+  inline-size: auto;
+  block-size: 4rem;
+  box-sizing: border-box;
 }
-.actual-answer i{
+
+.actual-answer i {
   font-size: 2rem;
 }
-.history-answer i{
+
+.history-answer i {
   font-size: 2rem;
 }

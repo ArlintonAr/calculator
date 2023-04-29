@@ -13,16 +13,16 @@ export default function buttonConvertOperator(index) {
                 operator = '<i class="fa-solid fa-square-root-variable"></i>';
                 break;
             case 3:
-                operator = '<i class="fa-solid fa-divide"></i>';
+                operator = ' / ';
                 break;
             case 4:
-                operator = '<i class="fa-solid fa-xmark"></i>';
+                operator = ' x ';
                 break;
             case 5:
-                operator = '<i class="fa-solid fa-plus"></i>';
+                operator = ' + ';
                 break;
             case 6:
-                operator = '<i class="fa-solid fa-minus"></i>';
+                operator = ' - ';
                 break;
             default:
                 break;
